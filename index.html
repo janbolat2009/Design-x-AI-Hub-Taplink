@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design x AI Hub</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="noise"></div>
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-logo">Design <span class="accent">x</span> AI</div>
+        <div class="nav-links">
+            <a href="#about">О нас</a>
+            <a href="#directions">Направления</a>
+            <a href="#lessons">Уроки</a>
+            <a href="#join" class="nav-cta">Вступить</a>
+        </div>
+        <button class="burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mob-link">О нас</a>
+        <a href="#directions" class="mob-link">Направления</a>
+        <a href="#lessons" class="mob-link">Уроки</a>
+        <a href="#join" class="mob-link mob-cta">Вступить</a>
+    </div>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Набор открыт
+            </div>
+            <div class="logo-wrap">
+                <img src="logo.jpg" alt="Design x AI Hub Logo" class="hero-logo">
+            </div>
+            <h1 class="hero-title">
+                Design <span class="gradient-text">x</span> AI Hub
+            </h1>
+            <p class="hero-sub">Сообщество дизайнеров, разработчиков<br>и экспертов в области ИИ</p>
+            <div class="hero-tags">
+                <span class="tag">Design</span>
+                <span class="tag">AI</span>
+                <span class="tag">Programming</span>
+            </div>
+            <div class="hero-buttons" id="join">
+                <a href="https://t.me/+VGDIFVOa4Qo0YzZi" class="btn-primary" target="_blank">
+                    <i class="fab fa-telegram"></i> Telegram
+                </a>
+                <a href="https://forms.gle/gNW5eegjWBdcLaby7" class="btn-outline" target="_blank">
+                    Записаться на обучение
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Прокрути вниз</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <section class="links-section">
+        <div class="links-grid">
+            <a href="https://t.me/+VGDIFVOa4Qo0YzZi" class="link-card card-tg" target="_blank">
+                <div class="lc-icon"><i class="fab fa-telegram"></i></div>
+                <div class="lc-text">
+                    <span class="lc-label">Сообщество</span>
+                    <span class="lc-title">Присоединиться к Telegram</span>
+                </div>
+                <i class="fas fa-arrow-right lc-arrow"></i>
+            </a>
+            <a href="https://forms.gle/gNW5eegjWBdcLaby7" class="link-card card-edu" target="_blank">
+                <div class="lc-icon"><i class="fas fa-user-graduate"></i></div>
+                <div class="lc-text">
+                    <span class="lc-label">Обучение</span>
+                    <span class="lc-title">Форма для обучения в клубе</span>
+                </div>
+                <i class="fas fa-arrow-right lc-arrow"></i>
+            </a>
+            <a href="https://forms.gle/uMzWp8tqgE9HB25FA" class="link-card card-teach" target="_blank">
+                <div class="lc-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <div class="lc-text">
+                    <span class="lc-label">Команда</span>
+                    <span class="lc-title">Стать преподавателем</span>
+                </div>
+                <i class="fas fa-arrow-right lc-arrow"></i>
+            </a>
+            <a href="https://forms.gle/KoCMxDe923qE41sU7" class="link-card card-smm" target="_blank">
+                <div class="lc-icon"><i class="fas fa-bullhorn"></i></div>
+                <div class="lc-text">
+                    <span class="lc-label">Карьера</span>
+                    <span class="lc-title">Набор в SMM-департамент</span>
+                </div>
+                <i class="fas fa-arrow-right lc-arrow"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-inner">
+            <div class="section-label">Кто мы</div>
+            <h2 class="section-title">Образовательный клуб<br><span class="gradient-text">нового поколения</span></h2>
+            <p class="section-desc">Design x AI Hub — место, где пересекаются дизайн, программирование и искусственный интеллект. Мы создаём среду, в которой ученики не просто слушают теорию, а строят реальные проекты и учатся думать как создатели технологий.</p>
+
+            <div class="mission-block">
+                <div class="mission-header">
+                    <i class="fas fa-crosshairs"></i>
+                    Наша миссия
+                </div>
+                <p class="mission-text">Подготовить новое поколение специалистов, которые умеют программировать, понимают, как работает AI, создают сильный визуальный и продуктовый дизайн — и способны запускать собственные проекты.</p>
+                <div class="mission-quote">"Мы не готовим зубрил. Мы готовим людей, которые могут создавать."</div>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card" data-delay="0">
+                    <div class="bc-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Экспертные знания</h3>
+                    <p>Курсы и мастер-классы от практикующих специалистов</p>
+                </div>
+                <div class="benefit-card" data-delay="100">
+                    <div class="bc-icon"><i class="fas fa-users"></i></div>
+                    <h3>Нетворкинг</h3>
+                    <p>Общение с единомышленниками и профессионалами индустрии</p>
+                </div>
+                <div class="benefit-card" data-delay="200">
+                    <div class="bc-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Реальные проекты</h3>
+                    <p>Практика на актуальных кейсах с ИИ и дизайном</p>
+                </div>
+                <div class="benefit-card" data-delay="300">
+                    <div class="bc-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>Постоянное развитие</h3>
+                    <p>Регулярные обновления программы и новые направления</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="directions" id="directions">
+        <div class="section-inner">
+            <div class="section-label">Чему учим</div>
+            <h2 class="section-title">Направления <span class="gradient-text">обучения</span></h2>
+
+            <div class="directions-grid">
+                <div class="dir-card dir-prog">
+                    <div class="dir-num">01</div>
+                    <div class="dir-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming</h3>
+                    <p>Основы и продвинутый уровень: логика, алгоритмы, разработка проектов, работа с реальными задачами.</p>
+                    <div class="dir-tag">Backend · Frontend · Алгоритмы</div>
+                </div>
+                <div class="dir-card dir-ai">
+                    <div class="dir-num">02</div>
+                    <div class="dir-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Практическое применение AI: работа с моделями, автоматизация, создание собственных AI-инструментов.</p>
+                    <div class="dir-tag">ML · Автоматизация · AI-инструменты</div>
+                </div>
+                <div class="dir-card dir-design">
+                    <div class="dir-num">03</div>
+                    <div class="dir-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Design</h3>
+                    <p>Графический дизайн, UI/UX, визуальная айдентика, работа с брендами и цифровыми продуктами.</p>
+                    <div class="dir-tag">UI/UX · Брендинг · Figma</div>
+                </div>
+            </div>
+
+            <div class="format-block">
+                <h3 class="format-title">Формат обучения</h3>
+                <div class="format-items">
+                    <div class="format-item">
+                        <i class="fas fa-calendar-week"></i>
+                        <span>Раз в неделю по каждому направлению</span>
+                    </div>
+                    <div class="format-item">
+                        <i class="fas fa-laptop"></i>
+                        <span>Онлайн и оффлайн формат</span>
+                    </div>
+                    <div class="format-item">
+                        <i class="fas fa-hammer"></i>
+                        <span>Практико-ориентированный подход</span>
+                    </div>
+                    <div class="format-item">
+                        <i class="fas fa-people-group"></i>
+                        <span>Командная среда и реальные проекты</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="forwhom">
+        <div class="section-inner">
+            <div class="section-label">Аудитория</div>
+            <h2 class="section-title">Для <span class="gradient-text">кого</span> клуб</h2>
+            <div class="audience-list">
+                <div class="aud-item"><i class="fas fa-check-circle"></i><span>Школьники и студенты, которые хотят развиваться в IT</span></div>
+                <div class="aud-item"><i class="fas fa-check-circle"></i><span>Те, кто хочет поступать за границу</span></div>
+                <div class="aud-item"><i class="fas fa-check-circle"></i><span>Будущие AI-инженеры и дизайнеры</span></div>
+                <div class="aud-item"><i class="fas fa-check-circle"></i><span>Те, кто хочет создать своё портфолио</span></div>
+                <div class="aud-item"><i class="fas fa-check-circle"></i><span>Те, кто устал от «пустых уроков» без практики</span></div>
+            </div>
+
+            <div class="diff-block">
+                <h3>Чем мы отличаемся</h3>
+                <div class="diff-grid">
+                    <div class="diff-item">
+                        <span class="diff-dot"></span>
+                        Комбинация Design + AI + Programming
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-dot"></span>
+                        Современный подход к обучению
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-dot"></span>
+                        Молодая амбициозная команда
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-dot"></span>
+                        Практика вместо скучной теории
+                    </div>
+                    <div class="diff-item">
+                        <span class="diff-dot"></span>
+                        Среда, где растут сильные люди
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lessons" id="lessons">
+        <div class="section-inner">
+            <div class="section-label">Галерея</div>
+            <h2 class="section-title">Наши <span class="gradient-text">уроки</span></h2>
+            <p class="section-desc">Реальные занятия, живые проекты, крутая атмосфера</p>
+
+            <div class="lessons-grid">
+                <div class="lesson-card lesson-card--wide">
+                    <div class="lesson-img-wrap">
+                        <img src="photo1.jpeg" alt="Урок 1" class="lesson-img">
+                        <div class="lesson-overlay">
+                            <span class="lesson-badge">Programming</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lesson-card">
+                    <div class="lesson-img-wrap">
+                        <img src="photo2.jpeg" alt="Урок 2" class="lesson-img">
+                        <div class="lesson-overlay">
+                            <span class="lesson-badge">Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lesson-card">
+                    <div class="lesson-img-wrap">
+                        <img src="photo3.jpeg" alt="Урок 3" class="lesson-img">
+                        <div class="lesson-overlay">
+                            <span class="lesson-badge">AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lesson-card">
+                    <div class="lesson-img-wrap">
+                        <img src="photo4.jpeg" alt="Урок 4" class="lesson-img">
+                        <div class="lesson-overlay">
+                            <span class="lesson-badge">Команда</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="opportunities">
+        <div class="section-inner">
+            <div class="section-label">Внутри клуба</div>
+            <h2 class="section-title">Возможности</h2>
+            <div class="opp-grid">
+                <div class="opp-card">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Реальные проекты в портфолио</span>
+                </div>
+                <div class="opp-card">
+                    <i class="fas fa-people-group"></i>
+                    <span>Работа в команде</span>
+                </div>
+                <div class="opp-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Стать преподавателем или SMM-специалистом</span>
+                </div>
+                <div class="opp-card">
+                    <i class="fas fa-trophy"></i>
+                    <span>Участие в хакатонах</span>
+                </div>
+                <div class="opp-card">
+                    <i class="fas fa-star"></i>
+                    <span>Лидерство и развитие soft skills</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-inner">
+            <h2 class="cta-title">Готов стать <span class="gradient-text">создателем</span>?</h2>
+            <p class="cta-sub">Сделай Design x AI Hub точкой своего роста. Не просто пользователь технологий — их создатель.</p>
+            <div class="cta-buttons">
+                <a href="https://t.me/+VGDIFVOa4Qo0YzZi" class="btn-primary" target="_blank">
+                    <i class="fab fa-telegram"></i> Telegram-сообщество
+                </a>
+                <a href="https://forms.gle/gNW5eegjWBdcLaby7" class="btn-outline" target="_blank">
+                    Записаться на обучение
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-logo">Design <span class="accent">x</span> AI Hub</div>
+            <p class="footer-copy">© 2026 Design x AI Hub. Все права защищены.</p>
+            <div class="footer-socials">
+                <a href="https://t.me/+VGDIFVOa4Qo0YzZi" target="_blank"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+        });
+        mobileMenu.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                burger.classList.remove('open');
+                mobileMenu.classList.remove('open');
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.benefit-card, .dir-card, .opp-card, .aud-item, .lesson-card, .link-card, .format-item, .diff-item').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
